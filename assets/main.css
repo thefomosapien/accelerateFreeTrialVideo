@@ -1,0 +1,481 @@
+video#bgvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url() no-repeat;
+    background-size: cover;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+    background: black;
+    opacity: 0.7;
+}
+
+.main-container {
+    width: 85vw;
+    height: 100vh;
+    margin: auto;
+}
+
+.call-out {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.call-out h1 {
+    font-size: 6em;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+.snark {
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+}
+
+.introduce {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 2%;
+}
+
+.introduce h2 {
+    font-style: italic;
+    color: #add134;
+    line-height: 65px;
+}
+
+.product-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 50px 10px 50px;
+}
+
+.product-img {
+    width: 45%;
+    text-align: right;
+}
+
+.product-img img {
+    width: 60%;
+}
+
+.product-list {
+    width: 45%;
+    margin-top: 4%;
+}
+
+.list-title {
+    font-size: 2em;
+    color: white;
+}
+
+.list li {
+    font-size: 20px;
+    padding-left: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #add134;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li:before {
+    content: "\f05d";
+    font-family: FontAwesome;
+    color: #add134;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.5em;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.cta h2 {
+    font-size: 35px;
+    color: white;
+    line-height: 50px;
+}
+
+.middle {
+    text-align: center;
+    margin: 15px;
+}
+
+p a {
+    color: black;
+    text-decoration: none;
+    padding: .2em 0;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+p a:hover {
+    color: black;
+    opacity: .6;
+}
+
+
+/* style input field text */
+
+::-webkit-input-placeholder {
+    color: black;
+    opacity: .8;
+}
+
+
+/* Input field that looks like a button */
+
+.email-field {
+    width: 350px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    background-color: #add134;
+    padding: .9em 1.8em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+.email-field:hover {
+    background-color: #c3e25b;
+}
+
+
+/* after button is clicked */
+
+.email-field.active {
+    width: 400px;
+    outline: none;
+    color: black;
+    text-align: left;
+    cursor: inherit;
+}
+
+
+/* Email submit button */
+
+#subscribe-button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    text-indent: -9999px;
+    opacity: .25;
+    background: url(media/arrow-circle-on-right.svg) no-repeat;
+    background-size: 13px;
+    background-position: 0 1px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: pointer;
+    display: none;
+}
+
+#subscribe-button:hover {
+    opacity: .33;
+}
+
+#subscribe-button.show {
+    display: inline-block;
+    background-size: 33px;
+}
+
+
+/* vertically position everything for effect */
+
+
+@media screen and (max-width: 1169px) {
+
+.call-out h1 {
+    font-size: 5em;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+
+.call-out h1 {
+    font-size: 5em;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.list-title {
+    font-size: 20px;
+    color: white;
+}
+
+.list li {
+    font-size: 15px;
+    padding-left: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #add134;
+}
+
+.introduce {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product-section {
+    margin-bottom: 65px;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+
+.call-out h1 {
+    font-size: 4em;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.list-title {
+    font-size: 20px;
+    color: white;
+}
+
+.list li {
+    font-size: 15px;
+    padding-left: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #add134;
+}
+
+.introduce {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product-section {
+    margin-bottom: 35px;
+}
+
+@media screen and (max-width: 679px) {
+
+.call-out h1 {
+    font-size: 7vw;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.snark {
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+}
+
+.introduce {
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.introduce h2 {
+    font-style: italic;
+    color: #add134;
+}
+
+.product-section {
+    display: initial;
+}
+
+.product-img {
+    width: 45%;
+    margin: auto;
+    text-align: center;
+}
+
+.product-img img {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.product-list {
+    width: 45%;
+    margin: auto;
+}
+
+.list-title {
+    font-size: 4vw;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.list li {
+    font-size: 15px;
+    padding-left: 1.3em;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    color: #add134;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li:before {
+    content: "\f05d";
+    font-family: FontAwesome;
+    color: #add134;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.5em;
+}
+
+.cta {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.cta h2 {
+    font-size: 4vw;
+    color: white;
+}
+
+.middle {
+    text-align: center;
+    margin: 15px;
+}
+
+p a {
+    color: black;
+    text-decoration: none;
+    padding: .2em 0;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+p a:hover {
+    color: black;
+    opacity: .6;
+}
+
+
+/* style input field text */
+
+::-webkit-input-placeholder {
+    color: black;
+    opacity: .8;
+}
+
+
+/* Input field that looks like a button */
+
+.email-field {
+    width: 250px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: center;
+    background-color: #add134;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+.email-field:hover {
+    background-color: #c3e25b;
+}
+
+
+/* after button is clicked */
+
+.email-field.active {
+    width: 250px;
+    outline: none;
+    color: black;
+    text-align: left;
+    cursor: inherit;
+}
+
+
+/* Email submit button */
+
+#subscribe-button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    text-indent: -9999px;
+    opacity: .25;
+    background: url(media/arrow-circle-on-right.svg) no-repeat;
+    background-size: 13px;
+    background-position: 0 1px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: pointer;
+    display: none;
+}
+
+#subscribe-button:hover {
+    opacity: .33;
+}
+
+#subscribe-button.show {
+    display: inline-block;
+    background-size: 33px;
+}
+
+
+/* vertically position everything for effect */
+
+}
+
+
+}
